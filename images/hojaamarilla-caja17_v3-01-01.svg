@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 312.02 309.38">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #fdd261;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1" data-name="Capa 1">
+    <rect class="cls-2" width="312.02" height="309.38"/>
+  </g>
+  <g id="Capa_2" data-name="Capa 2">
+    <rect class="cls-1" x="-3.82" y="14.68" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="32.56" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="50.44" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="68.32" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="86.2" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="104.08" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="121.96" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="139.84" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="157.72" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="175.6" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="193.48" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="211.36" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="229.24" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="247.12" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="265" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="282.88" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-3.82" y="300.76" width="320.16" height="1.87"/>
+    <rect class="cls-1" x="-142.57" y="156.79" width="320.16" height="1.87" transform="translate(-140.21 175.24) rotate(-90)"/>
+    <rect class="cls-1" x="-123.2" y="156.79" width="320.16" height="1.87" transform="translate(-120.84 194.6) rotate(-90)"/>
+    <rect class="cls-1" x="-103.83" y="156.79" width="320.16" height="1.87" transform="translate(-101.48 213.97) rotate(-90)"/>
+    <rect class="cls-1" x="-84.47" y="156.79" width="320.16" height="1.87" transform="translate(-82.11 233.34) rotate(-90)"/>
+    <rect class="cls-1" x="-65.1" y="156.79" width="320.16" height="1.87" transform="translate(-62.74 252.7) rotate(-90)"/>
+    <rect class="cls-1" x="-45.73" y="156.79" width="320.16" height="1.87" transform="translate(-43.37 272.07) rotate(-90)"/>
+    <rect class="cls-1" x="-26.36" y="156.79" width="320.16" height="1.87" transform="translate(-24.01 291.44) rotate(-90)"/>
+    <rect class="cls-1" x="-7" y="156.79" width="320.16" height="1.87" transform="translate(-4.64 310.81) rotate(-90)"/>
+    <rect class="cls-1" x="12.37" y="156.79" width="320.16" height="1.87" transform="translate(14.73 330.17) rotate(-90)"/>
+    <rect class="cls-1" x="31.74" y="156.79" width="320.16" height="1.87" transform="translate(34.1 349.54) rotate(-90)"/>
+    <rect class="cls-1" x="51.11" y="156.79" width="320.16" height="1.87" transform="translate(53.46 368.91) rotate(-90)"/>
+    <rect class="cls-1" x="70.47" y="156.79" width="320.16" height="1.87" transform="translate(72.83 388.27) rotate(-90)"/>
+    <rect class="cls-1" x="89.84" y="156.79" width="320.16" height="1.87" transform="translate(92.2 407.64) rotate(-90)"/>
+    <rect class="cls-1" x="109.21" y="156.79" width="320.16" height="1.87" transform="translate(111.56 427.01) rotate(-90)"/>
+    <rect class="cls-1" x="128.57" y="156.79" width="320.16" height="1.87" transform="translate(130.93 446.38) rotate(-90)"/>
+    <rect class="cls-1" x="147.94" y="156.79" width="320.16" height="1.87" transform="translate(150.3 465.74) rotate(-90)"/>
+  </g>
+</svg>
