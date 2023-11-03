@@ -1,0 +1,94 @@
+$azul-cielo:#78BFEA;
+$azul: #3A60AA;
+$azul-turquesa:#60BEB0;
+$dark: #030F09;
+$amarillo:  #FED061;
+$verde: #46B066;
+$verde-claro: #92C46C;
+$verde-oscuro: #00805C;
+$naranja-sec: #EE7C3D;
+$rojo: #D93231;
+$negro: #000;
+$azul: #3A60AA;
+$blanco: #ffffff;
+$rosa: #F18984;
+$rosa-claro: #F8BAA0;
+$rojo: #D93231;
+$morado: #954091;
+
+$sombra-paralela: 2px 4px 6px #0000003d;
+
+// TODO - Contemplar si se utiliza
+%pseudo_generico {
+    content: "";
+    position: absolute;
+}
+
+@mixin width_1100 {
+    @media screen and (max-width: 1100px) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and (max-width: 520px) {
+        @content;
+    }
+}
+
+:root {
+
+
+    --main-bg-color: #EF7D40;
+    --second-bg-color: #c86ece;
+    --third-bg-color: #931094;
+    --third-bg-color-opacity: #93109454;
+    --foreground-text-color: lightgrey;
+    --resources-bg-color: #AD6FAE;
+
+    //Copiamos de Generic
+    --ok-color: #16a34a;
+    --ok-lightcolor: #d0eddb;
+    --error-color: #dc2626;
+    --error-lightcolor: #fee2e2;
+    --solution-color: #00bdff;
+    --solution-lightcolor: #b2ebff;
+    --workspace-color: #c2c2c2;
+    --workspace-lightcolor: #ededed;
+
+    --MainColor: #{$azul};
+    --MainColorLight: #ffcfe2;//TODO
+    --second-bg-color: #{$naranja-sec};
+
+    --azul-cielo:#{$azul-cielo};
+    --azul-turquesa:#{$azul-turquesa};
+    --dark: #{$dark};
+    --amarillo: #{$amarillo};
+    --verde: #{$verde};
+    --verde-claro: #{$verde-claro};
+    --verde-oscuro: #{$verde-oscuro};
+    --rojo: #{$rojo};
+    --negro: #{$negro};
+    --blanco: #{$blanco};
+    --rosa: #{$rosa};
+    --rosa-claro: #{$rosa-claro};
+    --morado: #{$morado};
+
+
+
+    --SlidePadding: 8rem;
+    --TextColor: #2e2e2e;
+    --MainFont: "Bulo Rounded",sans-serif;
+    --MainText: 1.6rem;
+    --MainLineHeight: 1.6;
+    --BorderRadius: 7px;
+    --BorderRadiusTOC: 10px;
+
+
+
+
+    //Gloria
+    --slideBG: #fff;
+
+    --primarycolor: #3A60AA;
+    --azulcielo: #7ABDE9;
+}

@@ -1,0 +1,339 @@
+/* Desplegables */
+
+%DesplegableGenerico {
+    --colorDesplegable: var(--second-bg-color);
+    background-color: var(--colorDesplegable);
+    margin-bottom: 2rem;
+
+    .bck-dropdown-button {
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        font-family: var(--MainFont);
+        cursor: pointer;
+
+        .bck-dropdown-titulo,
+        .bck-dropdown-icon > .fa {
+            font-size: var(--MainText);
+            color: var(--TextColor);
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .bck-dropdown-icon > .fa {
+            color: var(--blanco);
+            font-size: 2.5rem;
+        }
+    }
+    .bck-dropdown-content {
+        max-height: 300px;
+        border: 0;
+        background: transparent;
+
+        p {
+            font-family: var(--MainFont);
+            font-weight: normal;
+            color: var(--TextColor);
+        }
+    }
+}
+
+%DesplegableBocadillo {
+    @extend %DesplegableGenerico;
+
+    --colorDesplegable: var(--second-bg-color);
+
+    .bck-dropdown-button {
+        font-family: "KG Blank Space Solid Acentos OK";
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 33px solid var(--colorDesplegable);
+            border-right: 0 solid transparent;
+            border-left: 18px solid transparent;
+            top: 10px;
+            left: -20px;
+            margin: 0;
+            transform: rotate(78deg);
+        }
+    }
+}
+%DesplegableRedondo {
+    @extend %DesplegableGenerico;
+    --colorDesplegable: var(--blanco);
+
+    --tamanoIcono: 5rem;
+    border: 3px solid var(--azul-turquesa);
+    border-radius: 40px;
+
+    .bck-dropdown-button .bck-dropdown-titulo {
+        text-transform: uppercase;
+        padding-left: calc(var(--tamanoIcono) + 1.5rem);
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: var(--tamanoIcono);
+            height: var(--tamanoIcono);
+            background-image: url(https://cdn.statically.io/gh/gloriablink/tekmanfonts/main/images/icono_piensa_desplegable.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 1px;
+            left: 15px;
+        }
+    }
+    .bck-dropdown-icon > .fa {
+        color: var(--TextColor);
+    }
+    .bck-dropdown-content {
+        padding-left: calc(var(--tamanoIcono) + 1.5rem);
+    }
+}
+
+/*--- TABLAS ---*/
+%tablaGenerica {
+    --colorTabla: var(--MainColor);
+    --widthBorde: 2px;
+
+    border: var(--widthBorde) solid var(--colorTabla);
+    td {
+        border: var(--widthBorde) solid var(--colorTabla);
+    }
+}
+
+%tablaRedonda {
+    --colorTabla: var(--MainColor);
+    --bordeTabla: 3px solid var(--colorTabla);
+    --radiusBorde: 30px;
+
+    border-radius: calc(var(--radiusBorde) + 5px);
+    border-spacing: 0;
+    border-collapse: separate;
+    border: var(--bordeTabla);
+    overflow: hidden;
+
+    td {
+        border: 0;
+    }
+
+    /* Apply a border to the right of all but the last column */
+    th:not(:last-child),
+    td:not(:last-child) {
+        border-right: var(--bordeTabla);
+    }
+
+    /* Apply a border to the bottom of all but the last row */
+    > thead > tr:not(:last-child) > th,
+    > thead > tr:not(:last-child) > td,
+    > tbody > tr:not(:last-child) > th,
+    > tbody > tr:not(:last-child) > td,
+    > tfoot > tr:not(:last-child) > th,
+    > tfoot > tr:not(:last-child) > td,
+    > tr:not(:last-child) > td,
+    > tr:not(:last-child) > th,
+    > thead:not(:last-child),
+    > tbody:not(:last-child),
+    > tfoot:not(:last-child) {
+        border-bottom: var(--bordeTabla);
+    }
+
+    tr:first-child :first-child {
+        border-top-left-radius: var(--radiusBorde);
+    }
+    tr:first-child :last-child {
+        border-top-right-radius: var(--radiusBorde);
+    }
+    tr:last-child :first-child {
+        border-bottom-left-radius: var(--radiusBorde);
+    }
+    tr:last-child :last-child {
+        border-bottom-right-radius: var(--radiusBorde);
+    }
+
+    td.bck-td-1 {
+        background-color: var(--colorTabla);
+    }
+}
+
+%tablaEspacios {
+    border: 0;
+    border-collapse: separate;
+    border-spacing: 15px;
+
+    td {
+        border: 0;
+        border-radius: 5px;
+        background-color: var(--blanco);
+
+        &.bck-td {
+            &.bck-td-1 {
+                border-radius: 40px;
+                background-color: var(--amarillo);
+            }
+        }
+    }
+}
+
+/*Reglas que beben de las variables principales*/
+.html-book {
+    font-size: var(--MainText);
+}
+html body:not(.edit),
+body.edit .navbar.libro {
+    line-height: var(--MainLineHeight);
+    font-size: var(--MainText);
+    font-family: var(--MainFont);
+}
+
+#actividad {
+    .texto_curso,
+    .texto_curso p {
+        font-size: var(--MainText);
+        line-height: var(--MainLineHeight) !important;
+    }
+    .pregunta .texto_curso {
+        font-size: var(--MainText);
+        line-height: var(--MainLineHeight);
+    }
+    .slide_content_type_1 .pregunta .texto_curso,
+    .texto_curso {
+        font-size: var(--MainText);
+    }
+    .workspace {
+        font-size: var(--MainText);
+        line-height: var(--MainLineHeight);
+    }
+    .form-control {
+        font-size: var(--MainText);
+    }
+
+    .carousel-inner .item-container {
+        margin-bottom: 7rem;
+        background-color: var(--slideBG);
+        padding: 0.1rem 0 3rem 0;
+        border-radius: 15px;
+        box-shadow: none;
+    }
+
+    /*-- Desplegables --*/
+    .bck-dropdown {
+        @extend %DesplegableGenerico;
+
+        &.bck-dropdown-1 {
+            @extend %DesplegableBocadillo;
+        }
+        &.bck-dropdown-2 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--amarillo);
+        }
+        &.bck-dropdown-3 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--verde);
+        }
+        &.bck-dropdown-4 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--rosa);
+        }
+        &.bck-dropdown-5 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--azul-cielo);
+        }
+        &.bck-dropdown-6 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--azul-turquesa);
+        }
+        &.bck-dropdown-7 {
+            @extend %DesplegableBocadillo;
+            --colorDesplegable: var(--blanco);
+
+            .bck-dropdown-button {
+                &:before {
+                    display: none;
+                }
+            }
+
+            .bck-dropdown-icon > .fa {
+                color: var(--TextColor);
+                font-size: 2.5rem;
+            }
+
+            .bck-dropdown-content {
+                border-top: 2px solid var(--amarillo);
+            }
+        }
+
+        &.bck-dropdown-8 {
+            @extend %DesplegableRedondo;
+        }
+
+        &.bck-dropdown-9 {
+            @extend %DesplegableRedondo;
+
+            .bck-dropdown-button .bck-dropdown-titulo {
+                &:before {
+                    content: "";
+                    background-image: url(https://cdn.statically.io/gh/gloriablink/tekmanfonts/main/images/icono_casa_desplegable.svg);
+                }
+            }
+        }
+    }
+
+    /*---- TABLAS Y CELDAS ----*/
+
+    div:not(.calculo) {
+        > table:not(.rf-tablegrid):not(.puzzle) {
+            @extend %tablaGenerica;
+            margin-bottom: 2rem;
+
+            &.bck-table {
+                &.bck-table-1 {
+                    --colorTabla: var(--azul-cielo);
+                }
+                &.bck-table-2 {
+                    --colorTabla: var(--rosa);
+                }
+                &.bck-table-3 {
+                    --colorTabla: var(--MainColor);
+                }
+                &.bck-table-4 {
+                    --colorTabla: var(--verde);
+                }
+                &.bck-table-5 {
+                    --colorTabla: var(--second-bg-color);
+                }
+                &.bck-table-6 {
+                    --colorTabla: var(--amarillo);
+                }
+                &.bck-table-7 {
+                    --colorTabla: var(--azul-turquesa);
+                }
+                &.bck-table-8 {
+                    --colorTabla: var(--amarillo);
+                    @extend %tablaRedonda;
+                }
+                &.bck-table-9 {
+                    --colorTabla: var(--morado);
+                    @extend %tablaRedonda;
+                }
+                &.bck-table-10 {
+                    --colorTabla: var(--verde-claro);
+                    @extend %tablaRedonda;
+                }
+                &.bck-table-11 {
+                    --colorTabla: var(--second-bg-color);
+                    @extend %tablaRedonda;
+                }
+                &.bck-table-12 {
+                    @extend %tablaEspacios;
+                }
+            }
+        }
+    }
+}
