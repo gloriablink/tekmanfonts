@@ -267,14 +267,23 @@ body {
 
 /*TÍTULO SLIDE*/
 
-#actividad .content .header .title h3 {
-    font-weight: 400;
-    font-style: normal;
-    color: #000000;
-    font-family: 'KG Blank Space Solid Acentos OK';
+#actividad .content .header .title {
+    min-height: 37px;
+    margin-bottom: 10px;
     text-align: right;
-    width: 100%;
-    font-size: 16px;
+}
+
+#actividad .content .header .title h3 {
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: white;
+    padding: 1.6rem;
+    background-size: contain;
+    width: fit-content;
+    border-radius: 3rem;
+    font-family: 'Bulo Rounded';
 }
 
 #actividad .content .header {
@@ -724,6 +733,38 @@ h4.bck-title-24:before {
     color: black;
     margin-top: 40px;
     position: relative;
+}
+
+
+/*----------------------TITULO 26---------------------*/
+.bck-title-26 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 40px;
+    position: relative;
+    background-color: #FBE183;
+    border-radius: 3rem;
+    text-align: center;
+    background-size: contain;
+    padding: 1.2rem;
+    width: fit-content;
+}
+
+
+/*----------------------TITULO 27---------------------*/
+.bck-title-27 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: black;
+    margin-top: 40px;
+    position: relative;
+    background-color: white;
+    border-radius: 3rem;
+    text-align: center;
+    background-size: contain;
+    padding: 1.2rem;
+    width: fit-content;
 }
 
 
@@ -1567,6 +1608,63 @@ h4.bck-title-24:before {
     content: counter(bck-li-counter,lower-alpha) ".";
     color: #46B066;
     font-family: 'KG Blank Space Solid Acentos OK';
+}
+
+
+/*----------------------LISTA ORDENADA 15---------------------*/
+#actividad ol.bck-ol-15 li {
+    margin-bottom: 1.2rem;
+}
+
+#actividad ol.bck-ol-15 li:before {
+    color: #00AEA4;
+    font-size: 1.8em;
+    font-family: 'Pequena';
+    margin-top: -2px;
+}
+
+
+/*----------------------LISTA ORDENADA 16---------------------*/
+#actividad ol.bck-ol-16 li {
+    margin-bottom: 1.5rem;
+}
+
+#actividad ol.bck-ol-16 li:before {
+    content: counter(bck-li-counter,lower-alpha) " ";
+    color: black;
+    font-size: 1.8rem;
+    margin-top: -1px;
+    background-image: url(https://cdn.statically.io/gh/gloriablink/tekmanfonts/main/images/circulo-listaordenada16.svg);
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    text-align: center;
+    width: 40px;
+    height: auto;
+    background-size: contain;
+    margin-left: 0.5rem;
+}
+
+
+/*----------------------LISTA ORDENADA 17---------------------*/
+#actividad ol.bck-ol-17 li {
+    margin-bottom: 1.5rem;
+}
+
+#actividad ol.bck-ol-17 li:before {
+    content: counter(bck-li-counter,lower-alpha) " ";
+    color: black;
+    font-size: 1.8rem;
+    margin-top: -1px;
+    background-image: url(https://cdn.statically.io/gh/gloriablink/tekmanfonts/main/images/circulo-listaordenada17.svg);
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    text-align: center;
+    width: 40px;
+    height: auto;
+    background-size: contain;
+    margin-left: 0.5rem;
 }
 
 
